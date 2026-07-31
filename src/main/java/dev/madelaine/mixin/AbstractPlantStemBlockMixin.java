@@ -24,6 +24,10 @@ public abstract class AbstractPlantStemBlockMixin extends GrowingPlantBlock {
 
     @Override
     protected void tick(@NonNull BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, @NonNull RandomSource random) {
-        this.randomTick(state, level, pos, random);
+        if (!state.canSurvive(level, pos)) {
+            level.destroyBlock(pos, true);
+        } else {
+            this.randomTick(state, level, pos, random);
+        }
     }
 }
