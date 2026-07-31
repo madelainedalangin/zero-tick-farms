@@ -6,7 +6,6 @@
     "BambooBlockMixin",
     "CactusBlockMixin",
     "ChorusFlowerBlockMixin",
-    "ExampleMixin",
     "SugarCaneBlockMixin"
   ],
   "injectors": {
