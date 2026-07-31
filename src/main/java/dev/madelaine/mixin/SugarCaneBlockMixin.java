@@ -16,12 +16,8 @@ public abstract class SugarCaneBlockMixin {
     @Shadow
     protected abstract void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random);
 
-    @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "tick", at = @At("HEAD"))
     private void zeroTickGrowth(BlockState state, ServerLevel level, BlockPos pos, RandomSource random, CallbackInfo ci) {
         this.randomTick(state, level, pos, random);
-        //skips vanilla's survival check so that the piston do not break the sugar cane
-        //the side effect is that the sugarcane grows even without water and does not
-        //self-destruct when no water is adjacent to it.
-        ci.cancel();
     }
 }

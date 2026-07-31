@@ -20,10 +20,8 @@ public abstract class CactusBlockMixin {
     @Shadow
     protected abstract void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random);
 
-    @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "tick", at = @At("HEAD"))
     private void zeroTickGrowth(BlockState state, ServerLevel level, BlockPos pos, RandomSource random, CallbackInfo ci) {
         this.randomTick(state, level, pos, random);
-        // skip vanilla's survival check so a forced update can't break the cactus.
-        ci.cancel();
     }
 }
