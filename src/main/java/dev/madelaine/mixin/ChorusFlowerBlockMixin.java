@@ -16,9 +16,11 @@ public abstract class ChorusFlowerBlockMixin {
     @Shadow
     protected abstract void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random);
 
-    @Inject(method = "tick", at = @At("HEAD"))
+    @Inject(method = "tick", at = @At("TAIL"))
     private void zeroTickGrowth(BlockState state, ServerLevel level, BlockPos pos, RandomSource random, CallbackInfo ci) {
-        this.randomTick(state, level, pos, random);
+        if (state.canSurvive(level, pos)) {
+            this.randomTick(state, level, pos, random);
+        }
     }
 }
 
