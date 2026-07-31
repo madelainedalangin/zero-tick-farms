@@ -1,17 +1,18 @@
 {
-	"required": true,
-	"package": "dev.madelaine.mixin",
-	"compatibilityLevel": "JAVA_25",
-	"mixins": [
-		"BambooBlockMixin",
-		"ChorusFlowerBlockMixin",
-		"ExampleMixin",
-		"SugarCaneBlockMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "dev.madelaine.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "BambooBlockMixin",
+    "CactusBlockMixin",
+    "ChorusFlowerBlockMixin",
+    "ExampleMixin",
+    "SugarCaneBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }
