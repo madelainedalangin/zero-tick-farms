@@ -1,4 +1,4 @@
-# 0 Tick Crops (Minecraft 26.1.2)
+# Zero Tick Farms (Minecraft 26.1.2)
 
 A Fabric mod that restores **0-tick plant growth**, the behavior Mojang removed
 in the Minecraft 1.16 update. This mod forces a scheduled block tick on a supported
