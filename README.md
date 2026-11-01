@@ -1,16 +1,16 @@
-# Zero Tick Farms (Minecraft 26.1.2)
+# Zero Tick Farms (Minecraft 26.3)
 
 A Fabric mod that restores **0-tick plant growth**, the behavior Mojang removed
 in the Minecraft 1.16 update. This mod forces a scheduled block tick on a supported
 plant using a sticky piston or an observer, and makes the plant grow, enabling
 fast 0-tick style farms.
 
-This is a port to **Minecraft 26.1.2** of the original mod by **tildejustin**. It was originally mapped in Yarn, and 
-this mod is ported to Mojang mappings for 26.1.
+This is a port to **Minecraft 26.3** of the original mod by **tildejustin**. It was originally mapped in Yarn, and 
+this mod is ported to Mojang mappings for 26.3.
 
 ## Supported plants
 
-updated for 26.1:
+updated for 26.3:
 
 - Bamboo
 - Cactus
@@ -23,7 +23,7 @@ updated for 26.1:
 ## Not supported
 
 The original mod also targeted several blocks that cannot be 0-ticked in
-26.1, because the game no longer schedules a tick on them from a block update. The crops/plants that are not in this mod are the following:
+26.3, because the game no longer schedules a tick on them from a block update. The crops/plants that are not in this mod are the following:
 
 - Wheat / carrots / potatoes / beetroot (crops)
 - Cocoa, nether wart, sweet berries
@@ -45,28 +45,33 @@ Notes:
 
 ## Requirements
 
-- **Minecraft** 26.1.2
+- **Minecraft** 26.3
 - **Fabric Loader** 0.19.2 or newer
-- **Fabric API** (the build for Minecraft 26.1.2)
+- **Fabric API** (the build for Minecraft 26.3)
 
 The loader requirement is a minimum: 0.19.2 or any newer version works. If your
 Fabric Loader is older than 0.19.2, update it or the mod won't load.
 
 ## Install
 
-1. Install **Fabric Loader** (0.19.2+) for Minecraft 26.1.2 using the official
+1. Install **Fabric Loader** (0.19.2+) for Minecraft 26.3 using the official
    Fabric installer from fabricmc.net.
-2. Download **Fabric API** for 26.1.2.
+2. Download **Fabric API** for 26.3.
 3. Put both the Fabric API `.jar` and this mod's `.jar` in your `mods/` folder.
 4. Launch Minecraft with the Fabric profile.
 
 Intended for single-player or servers that allow fast farms.
 
+## Older versions
+
+For Minecraft 26.1.2, use version 1.0.0 of this mod. Its source is on the
+[`26.1.2` branch](https://github.com/madelainedalangin/zero-tick-farms/tree/26.1.2).
+
 ## Credit
 
 Original mod: [tildejustin/zero-tick-crops](https://github.com/tildejustin/zero-tick-crops) (MIT License).
 All credit for the concept and original implementation goes to tildejustin.
-This repository updates it to run on Minecraft 26.1.2 and documents which
+This repository updates it to run on Minecraft 26.3 and documents which
 blocks the current game still supports.
 
 ## License
