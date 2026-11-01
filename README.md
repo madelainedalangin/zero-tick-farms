@@ -64,7 +64,7 @@ Intended for single-player or servers that allow fast farms.
 
 ## Older versions
 
-For Minecraft 26.1.2, use version 1.0.0 of this mod. Its source is on the
+For Minecraft 26.1.2, use version v1.0.0 of this mod. Its source is on the
 [26.1.2 branch](https://github.com/madelainedalangin/zero-tick-farms/tree/26.1.2).
 
 ## Credit
